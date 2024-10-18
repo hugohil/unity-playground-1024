@@ -1,0 +1,1001 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.23f1 (1c4764c07fb4) revision 1853284'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16292 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/hilai/sources/unity/LODestroy
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57362
+-job-worker-count
+1
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/hilai/sources/unity/LODestroy
+C:/Users/hilai/sources/unity/LODestroy
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21356]  Target information:
+
+Player connection [21356]  * "[IP] 192.168.1.71 [Port] 0 [Flags] 2 [Guid] 3982809761 [EditorId] 3982809761 [Version] 1048832 [Id] WindowsEditor(7,hugohil-desktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [21356] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21356] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 1
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 398.89 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.23f1 (1c4764c07fb4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/hilai/sources/unity/LODestroy/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     6029 MB
+    Driver:   32.0.15.6109
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.438423 seconds.
+- Loaded All Assemblies, in 15.281 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.528 seconds
+Domain Reload Profiling: 15806ms
+	BeginReloadAssembly (12445ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (779ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (515ms)
+	LoadAllAssembliesAndSetupDomain (1514ms)
+		LoadAssemblies (12440ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1509ms)
+			TypeCache.Refresh (1507ms)
+				TypeCache.ScanAssembly (1004ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (529ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (449ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (45ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (249ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 17.405 seconds
+Refreshing native plugins compatible for Editor in 4.51 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.091 seconds
+Domain Reload Profiling: 19487ms
+	BeginReloadAssembly (3174ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (74ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (86ms)
+	LoadAllAssembliesAndSetupDomain (14037ms)
+		LoadAssemblies (12787ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1470ms)
+			TypeCache.Refresh (1334ms)
+				TypeCache.ScanAssembly (1231ms)
+			BuildScriptInfoCaches (115ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (2092ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1214ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (713ms)
+			ProcessInitializeOnLoadMethodAttributes (378ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 8.80 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 254 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (4.7 MB). Loaded Objects now: 6572.
+Memory consumption went from 204.7 MB to 200.1 MB.
+Total: 11.413500 ms (FindLiveObjects: 0.884000 ms CreateObjectMapping: 1.689100 ms MarkObjects: 5.955000 ms  DeleteObjects: 2.884200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 311867.241059 seconds.
+  path: Assets/Materials/Stylized.mat
+  artifactKey: Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Stylized.mat using Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba78573904aba972ae06e962d30747a0') in 0.6190304 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 279.988329 seconds.
+  path: Assets/Materials/Stylized.mat
+  artifactKey: Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Stylized.mat using Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2337bec539b33993a0fa99f709f1ea88') in 0.9171805 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.846749 seconds.
+  path: Assets/Materials/Stylized.mat
+  artifactKey: Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Stylized.mat using Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '498ac8422b212f7fbfa8fbb32f4407be') in 0.0205824 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.690393 seconds.
+  path: Assets/Materials/Stylized.mat
+  artifactKey: Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Stylized.mat using Guid(c04996035985ab04d89263aafe65d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9be3800f0f2f4bf0782a6d82938f9a11') in 0.0228161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.052 seconds
+Refreshing native plugins compatible for Editor in 3.99 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.525 seconds
+Domain Reload Profiling: 2575ms
+	BeginReloadAssembly (335ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (602ms)
+		LoadAssemblies (514ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (267ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (241ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1526ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (986ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (732ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Refreshing native plugins compatible for Editor in 7.97 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (5.8 MB). Loaded Objects now: 6649.
+Memory consumption went from 179.0 MB to 173.2 MB.
+Total: 15.005800 ms (FindLiveObjects: 2.454300 ms CreateObjectMapping: 1.781100 ms MarkObjects: 6.972000 ms  DeleteObjects: 3.796500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 326.936020 seconds.
+  path: Assets/Materials/PP_Contour.mat
+  artifactKey: Guid(e61d90aa9a167204c864c6b1ce9d2427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PP_Contour.mat using Guid(e61d90aa9a167204c864c6b1ce9d2427) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2539ec214b62aa926cd9c771dde49912') in 0.6550821 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.308820 seconds.
+  path: Assets/Materials/PP_Contour.mat
+  artifactKey: Guid(e61d90aa9a167204c864c6b1ce9d2427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PP_Contour.mat using Guid(e61d90aa9a167204c864c6b1ce9d2427) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5509c00e6db08a8a1d8bddc535d00538') in 0.009502 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 5668.677856 seconds.
+  path: Assets/RenderFeatures
+  artifactKey: Guid(2fcda0bacbc0b6f4d8ce13b60744d526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures using Guid(2fcda0bacbc0b6f4d8ce13b60744d526) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb1e658c7df403a6e5fb65471c25eb76') in 0.0046052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.17 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5744 unused Assets / (4.9 MB). Loaded Objects now: 6805.
+Memory consumption went from 180.7 MB to 175.8 MB.
+Total: 45.524500 ms (FindLiveObjects: 1.007600 ms CreateObjectMapping: 1.144600 ms MarkObjects: 39.434200 ms  DeleteObjects: 3.935900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.238 seconds
+Refreshing native plugins compatible for Editor in 5.21 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.421 seconds
+Domain Reload Profiling: 2654ms
+	BeginReloadAssembly (385ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (34ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (122ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (725ms)
+		LoadAssemblies (581ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (312ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (275ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1423ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (885ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (660ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Refreshing native plugins compatible for Editor in 4.95 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (5.8 MB). Loaded Objects now: 6673.
+Memory consumption went from 177.5 MB to 171.7 MB.
+Total: 13.430000 ms (FindLiveObjects: 1.007100 ms CreateObjectMapping: 1.471000 ms MarkObjects: 6.359400 ms  DeleteObjects: 4.591200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 43.399342 seconds.
+  path: Assets/RenderFeatures/CustomRenderPassFeature.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/CustomRenderPassFeature.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '728f888f66f4ab442a7cd3c2711be95c') in 0.0525348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.358637 seconds.
+  path: Assets/RenderFeatures/SelectiveOutline.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/SelectiveOutline.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c86db1143f89aeef61bb9bc0e7fa405') in 0.0012991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.364 seconds
+Refreshing native plugins compatible for Editor in 98.56 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.487 seconds
+Domain Reload Profiling: 6846ms
+	BeginReloadAssembly (358ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (853ms)
+		LoadAssemblies (597ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (449ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (402ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (5488ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3916ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (66ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (669ms)
+			ProcessInitializeOnLoadAttributes (3056ms)
+			ProcessInitializeOnLoadMethodAttributes (97ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 4.11 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (5.9 MB). Loaded Objects now: 6675.
+Memory consumption went from 177.3 MB to 171.4 MB.
+Total: 11.494900 ms (FindLiveObjects: 0.852100 ms CreateObjectMapping: 1.324600 ms MarkObjects: 6.168100 ms  DeleteObjects: 3.148700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.924120 seconds.
+  path: Assets/RenderFeatures/SelectiveOutline.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/SelectiveOutline.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84db76a3a32035aa9c0ef002d1a965a4') in 0.0112533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.984 seconds
+Refreshing native plugins compatible for Editor in 4.82 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.378 seconds
+Domain Reload Profiling: 2359ms
+	BeginReloadAssembly (272ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (594ms)
+		LoadAssemblies (461ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (283ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (254ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1379ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (842ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (623ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 5.74 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (6.1 MB). Loaded Objects now: 6677.
+Memory consumption went from 177.3 MB to 171.2 MB.
+Total: 13.018900 ms (FindLiveObjects: 1.270600 ms CreateObjectMapping: 1.530600 ms MarkObjects: 6.107700 ms  DeleteObjects: 4.108600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 47.391561 seconds.
+  path: Assets/RenderFeatures/SelectiveOutline.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/SelectiveOutline.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49a53891af5df6da692b14ee4c850216') in 0.0092176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.042 seconds
+Refreshing native plugins compatible for Editor in 4.81 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.554 seconds
+Domain Reload Profiling: 2593ms
+	BeginReloadAssembly (282ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (644ms)
+		LoadAssemblies (496ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (307ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (276ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1554ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1031ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (783ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Refreshing native plugins compatible for Editor in 4.02 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (5.8 MB). Loaded Objects now: 6679.
+Memory consumption went from 177.3 MB to 171.5 MB.
+Total: 11.923100 ms (FindLiveObjects: 0.904300 ms CreateObjectMapping: 1.384800 ms MarkObjects: 6.022800 ms  DeleteObjects: 3.609800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 165.358797 seconds.
+  path: Assets/RenderFeatures/SelectiveOutline.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/SelectiveOutline.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4eacfdf1a2d141fbd1b225014ddf0f1d') in 0.0071799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.267665 seconds.
+  path: Assets/RenderFeatures/SelectiveOutlineFeature.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/SelectiveOutlineFeature.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e946abf7a636963864b225b6142be10b') in 0.0018599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.976 seconds
+Refreshing native plugins compatible for Editor in 7.55 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.459 seconds
+Domain Reload Profiling: 2432ms
+	BeginReloadAssembly (269ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (591ms)
+		LoadAssemblies (458ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (283ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (252ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1459ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (838ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (616ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 5.59 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (6.0 MB). Loaded Objects now: 6681.
+Memory consumption went from 177.3 MB to 171.3 MB.
+Total: 12.890400 ms (FindLiveObjects: 0.974400 ms CreateObjectMapping: 1.285800 ms MarkObjects: 6.761000 ms  DeleteObjects: 3.868000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.860169 seconds.
+  path: Assets/RenderFeatures/SelectiveOutlineFeature.cs
+  artifactKey: Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderFeatures/SelectiveOutlineFeature.cs using Guid(eeae38d4919fbd149afd83d885e2cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43bd23b475de917a906cbb2c9fd4657e') in 0.0084877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.035 seconds
+Refreshing native plugins compatible for Editor in 6.13 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+The project currently uses the compatibility mode where the Render Graph API is disabled. Support for this mode will be removed in future Unity versions. Migrate existing ScriptableRenderPasses to the new RenderGraph API. After the migration, disable the compatibility mode in Edit > Projects Settings > Graphics > Render Graph.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs:427)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 427)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.577 seconds
+Domain Reload Profiling: 2607ms
+	BeginReloadAssembly (279ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (624ms)
+		LoadAssemblies (486ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (293ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (266ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1577ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (998ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (741ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 6.24 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5760 unused Assets / (5.3 MB). Loaded Objects now: 6683.
+Memory consumption went from 177.3 MB to 172.0 MB.
+Total: 13.738600 ms (FindLiveObjects: 1.029200 ms CreateObjectMapping: 1.822400 ms MarkObjects: 6.809000 ms  DeleteObjects: 4.076200 ms)
+
+Prepare: number of updated asset objects reloaded= 4
+========================================================================
+Received Import Request.
+  Time since last request: 1264.348940 seconds.
+  path: Assets/Allsky/Epic
+  artifactKey: Guid(bd9456a4882b51d4b85f00de575e3bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic using Guid(bd9456a4882b51d4b85f00de575e3bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '217a91613528a95c504327711284fd44') in 0.0104994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.329027 seconds.
+  path: Assets/Allsky/Epic/Epic_BrightIncomingStorm
+  artifactKey: Guid(9a3e705693f40a648b3c64f08bc86e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_BrightIncomingStorm using Guid(9a3e705693f40a648b3c64f08bc86e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06218455c1e8e42b6fb99f6d509f42d9') in 0.0008109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.689580 seconds.
+  path: Assets/Allsky/Epic/Epic_BlueSunset
+  artifactKey: Guid(ce5d1fad25b64d5458433f6b103022ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_BlueSunset using Guid(ce5d1fad25b64d5458433f6b103022ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '415d208046974d6e944eb6de682f8dc1') in 0.001255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.235086 seconds.
+  path: Assets/Allsky/Epic/Epic_BigCloudsSoft
+  artifactKey: Guid(2c2f5da11b724574aac7e2d5a42a6e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_BigCloudsSoft using Guid(2c2f5da11b724574aac7e2d5a42a6e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca3a3fac164172a436951c9bac69da0e') in 0.0007118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.262583 seconds.
+  path: Assets/Allsky/Epic/Epic Sunset B
+  artifactKey: Guid(2edfad8df42e1479f84b5c4a7ac8d8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic Sunset B using Guid(2edfad8df42e1479f84b5c4a7ac8d8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '714c91bcb386bab90fe105a4ab3a4188') in 0.0008689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.730745 seconds.
+  path: Assets/Allsky/Epic/Epic Night Turbulent Equirect
+  artifactKey: Guid(f25dadd293e3d47aebfbe57eedfac2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic Night Turbulent Equirect using Guid(f25dadd293e3d47aebfbe57eedfac2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1a31440c7b25519983d67b076889ca0') in 0.0008145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.104598 seconds.
+  path: Assets/Allsky/Epic/Epic Bright Sunset
+  artifactKey: Guid(aaf60837ee40341b19ca9fd09fd53beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic Bright Sunset using Guid(aaf60837ee40341b19ca9fd09fd53beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40d6ed93ce96d1e59213afaa8884c67f') in 0.0010706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.473342 seconds.
+  path: Assets/Allsky/Epic/Epic_GloriousPink
+  artifactKey: Guid(122e538c1692f32409b2e22f1ba7257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_GloriousPink using Guid(122e538c1692f32409b2e22f1ba7257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11a09444a307a4c83fea2d63fd72db10') in 0.0011189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.716013 seconds.
+  path: Assets/Allsky/Epic/Epic_NightStormMoonGlow
+  artifactKey: Guid(5f866781a7017c54686ea43d528f0faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_NightStormMoonGlow using Guid(5f866781a7017c54686ea43d528f0faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecc6f3f507127cb0eaad0b32a6b505ec') in 0.0009739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.085981 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight
+  artifactKey: Guid(08ac445850da1e14296cdc214b84b2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight using Guid(08ac445850da1e14296cdc214b84b2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bba111b00a0808a8bc1da0654c281df') in 0.0008415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.734336 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow
+  artifactKey: Guid(d76dee0ebabc592479067f91e4744a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow using Guid(d76dee0ebabc592479067f91e4744a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2851161f87a3b23b159bfc5f8f7605e') in 0.0009006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.258066 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow.mat
+  artifactKey: Guid(2c34e54ce00bdfd498a6975afa7057cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow.mat using Guid(2c34e54ce00bdfd498a6975afa7057cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7b9a9184f4e8477dc9c37a94508794e') in 0.7039629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow Equirect.mat
+  artifactKey: Guid(a57ee9ff4463e4366b452c36a46a8e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow Equirect.mat using Guid(a57ee9ff4463e4366b452c36a46a8e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08b1a9293aa5701e1846eb4a4ce0abd7') in 0.1429994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_2_Left+X.png
+  artifactKey: Guid(2cbcfa219945abd44b55067d556a5697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_2_Left+X.png using Guid(2cbcfa219945abd44b55067d556a5697) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '297d8bf0ddd78b0c4864b55d85b5bf0c') in 0.0368884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_5_Down-Y.png
+  artifactKey: Guid(afdc80df294ecd04da53df6803e7640d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_5_Down-Y.png using Guid(afdc80df294ecd04da53df6803e7640d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59c90247cf59df23a661a60cb3d8f211') in 0.0183268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_EquiRect_flat.png
+  artifactKey: Guid(03f49ea335ef14caa885e3867943c6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_EquiRect_flat.png using Guid(03f49ea335ef14caa885e3867943c6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36ad174dcb22b7144556f0a40930edd9') in 0.0566211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_4_Up+Y.png
+  artifactKey: Guid(a94046f8a4ac7f04b96f7ae7499f4a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_4_Up+Y.png using Guid(a94046f8a4ac7f04b96f7ae7499f4a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f521ce43325026d7c6eb97173eba0d75') in 0.0203842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_1_Back-Z.png
+  artifactKey: Guid(e02f2afb0d314764fbe2b5a5d900c5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_1_Back-Z.png using Guid(e02f2afb0d314764fbe2b5a5d900c5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb333dad37af67703ed9e07a7071ba37') in 0.0234157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_3_Right-X.png
+  artifactKey: Guid(070b74e5ef6c21f4a82411ec4639bc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_3_Right-X.png using Guid(070b74e5ef6c21f4a82411ec4639bc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36be383495f22ce62534ad9da13dc4c0') in 0.0197175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow.unity
+  artifactKey: Guid(cc63282b8d1fe7743ae1e290c525a63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow.unity using Guid(cc63282b8d1fe7743ae1e290c525a63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da27caefc0309124edf49d43f165d983') in 0.0012836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_0_Front+Z.png
+  artifactKey: Guid(633468f51fbceaf4391f7b61f9f93095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_TwilightStormGlow/Epic_TwilightStormGlow_Cam_0_Front+Z.png using Guid(633468f51fbceaf4391f7b61f9f93095) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19785fc642d1f8131f7d06a7a90e1fca') in 0.0181733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.982709 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight.mat
+  artifactKey: Guid(47a2a6c4c7b5f864d9f2d4fb2dd44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight.mat using Guid(47a2a6c4c7b5f864d9f2d4fb2dd44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e08b552039c9e5bba41a7e8a90a15ce6') in 0.066938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_EquiRect_flat.png
+  artifactKey: Guid(f1e76dc0bafe345e8babce086469284b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_EquiRect_flat.png using Guid(f1e76dc0bafe345e8babce086469284b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a836af1a72c663643463a66ce5f54269') in 0.0543773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_0_Front+Z.png
+  artifactKey: Guid(a7fe01243bfecd54ab9f2117aac2fe68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_0_Front+Z.png using Guid(a7fe01243bfecd54ab9f2117aac2fe68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39b785e76ab200b733d3facd22b5de86') in 0.0198257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_4_Up+Y.png
+  artifactKey: Guid(fd24f9cba8f318a4daa5ce638712e328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_4_Up+Y.png using Guid(fd24f9cba8f318a4daa5ce638712e328) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af7dc355d3d971ca382518bd6971100a') in 0.0218159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_3_Right-X.png
+  artifactKey: Guid(a06671eec45e59740a596311d0a53a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_3_Right-X.png using Guid(a06671eec45e59740a596311d0a53a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae400d85217518ee891330dc54a8eb30') in 0.0199187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight Equirect.mat
+  artifactKey: Guid(72bd990f53e544760a66051354701d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight Equirect.mat using Guid(72bd990f53e544760a66051354701d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96d258359aae373765ff7a169b657074') in 0.0332343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_2_Left+X.png
+  artifactKey: Guid(e103573761e54c54787ebe47c46096f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_2_Left+X.png using Guid(e103573761e54c54787ebe47c46096f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc8188ba498522821d2b3e42ee51b841') in 0.0191077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_5_Down-Y.png
+  artifactKey: Guid(789c86b481b1e7e40912c4b9fb7bc342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_5_Down-Y.png using Guid(789c86b481b1e7e40912c4b9fb7bc342) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1daba61c0ac90f1fae66530301839cc') in 0.0193297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_1_Back-Z.png
+  artifactKey: Guid(943c0d733aecd214f9e27679142adf02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight_Cam_1_Back-Z.png using Guid(943c0d733aecd214f9e27679142adf02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b521953b4551aa5799851f4270bf329e') in 0.0213905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.650195 seconds.
+  path: Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight.unity
+  artifactKey: Guid(09d284b7ac2ae5748ac81b294a2e11bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Allsky/Epic/Epic_Twilight/Epic_Twilight.unity using Guid(09d284b7ac2ae5748ac81b294a2e11bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c388655050a698ec14c679811e15f1b') in 0.0008978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
