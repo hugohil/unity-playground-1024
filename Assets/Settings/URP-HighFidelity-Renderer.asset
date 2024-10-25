@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: SelectiveOutline
   m_EditorClassIdentifier: 
   m_Active: 1
+  viewSpaceNormalsShader: {fileID: 4800000, guid: 91b4a7db8dc25e64b9818f789760b46a,
+    type: 3}
+  outlineShader: {fileID: 4800000, guid: 511b806f047b42745b3cd84476688908, type: 3}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  settings:
+    mainColor: {r: 1, g: 1, b: 1, a: 1}
+    thickness: 1
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,11 +84,11 @@ MonoBehaviour:
     probeSamplingDebugTexture: {fileID: 0}
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
-  - {fileID: -1878332245247344467}
   - {fileID: 1318638509104245028}
   - {fileID: 302696881603365982}
+  - {fileID: -1878332245247344467}
   - {fileID: -7480934296477688367}
-  m_RendererFeatureMap: adc0de57c6d2eee524294fd2bcbe4c125e4c96c635653304d11d699ee4612e98
+  m_RendererFeatureMap: 24294fd2bcbe4c125e4c96c635653304adc0de57c6d2eee5d11d699ee4612e98
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -97,9 +106,9 @@ MonoBehaviour:
     passOperation: 2
     failOperation: 0
     zFailOperation: 0
-  m_ShadowTransparentReceive: 1
+  m_ShadowTransparentReceive: 0
   m_RenderingMode: 0
-  m_DepthPrimingMode: 1
+  m_DepthPrimingMode: 0
   m_CopyDepthMode: 0
   m_DepthAttachmentFormat: 0
   m_DepthTextureFormat: 0

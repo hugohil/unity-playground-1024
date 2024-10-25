@@ -1,95 +1,124 @@
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering.RenderGraphModule;
+using UnityEngine.Rendering.RenderGraphModule.Util;
 
-public class SelectiveOutlineFeature : ScriptableRendererFeature
-{
-    class SelectiveOutline : ScriptableRenderPass
-    {
-        // This class stores the data needed by the RenderGraph pass.
-        // It is passed as a parameter to the delegate function that executes the RenderGraph pass.
-        private class PassData
-        {
+public class SelectiveOutlineFeature : ScriptableRendererFeature {
+
+    [System.Serializable]
+    private class SelectiveOutlineSettings {
+        public Color mainColor = Color.white;
+
+        [Range(0.0f, 10.0f)]
+        public float thickness = 1.0f;
+    }
+
+    private class SelectiveOutlinePass : ScriptableRenderPass {
+        Material viewSpaceNormalMaterial;
+        Material outlineMaterial;
+
+        SelectiveOutlineSettings settings;
+        FilteringSettings filteringSettings;
+
+        RenderTextureDescriptor normalsDescriptor;
+
+        public SelectiveOutlinePass(Material _viewSpaceNormalsMaterial, Material _outlineMaterial, SelectiveOutlineSettings _settings, LayerMask _layerMask) {
+            settings = _settings;
+
+            viewSpaceNormalMaterial = _viewSpaceNormalsMaterial;
+
+            outlineMaterial = _outlineMaterial;
+            outlineMaterial.SetColor("_MainColor", settings.mainColor);
+            outlineMaterial.SetFloat("_Thickness", settings.thickness);
+
+            normalsDescriptor = new RenderTextureDescriptor(Screen.width, Screen.height,
+            RenderTextureFormat.Default, 0);
+
+            filteringSettings = new FilteringSettings(RenderQueueRange.opaque, _layerMask);
         }
 
-        // This static method is passed as the RenderFunc delegate to the RenderGraph render pass.
-        // It is used to execute draw commands.
-        static void ExecutePass(PassData data, RasterGraphContext context)
-        {
+        class PassData {
+            public Material mat;
+            public TextureHandle src;
         }
 
-        // RecordRenderGraph is where the RenderGraph handle can be accessed, through which render passes can be added to the graph.
-        // FrameData is a context container through which URP resources can be accessed and managed.
-        public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
-        {
-            const string passName = "Render Custom Pass";
+        public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData) {
+            using (IRasterRenderGraphBuilder builder = renderGraph.AddRasterRenderPass<PassData>("ViewSpaceNormalsPass", out PassData passData)) {
+                passData.mat = viewSpaceNormalMaterial;
 
-            // This adds a raster render pass to the graph, specifying the name and the data type that will be passed to the ExecutePass function.
-            using (var builder = renderGraph.AddRasterRenderPass<PassData>(passName, out var passData))
-            {
-                // Use this scope to set the required inputs and outputs of the pass and to
-                // setup the passData with the required properties needed at pass execution time.
-
-                // Make use of frameData to access resources and camera data through the dedicated containers.
-                // Eg:
-                // UniversalCameraData cameraData = frameData.Get<UniversalCameraData>();
                 UniversalResourceData resourceData = frameData.Get<UniversalResourceData>();
+                passData.src = resourceData.cameraDepthTexture;
+                // passData.src = resourceData.activeColorTexture;
 
-                // Setup pass inputs and outputs through the builder interface.
-                // Eg:
-                // builder.UseTexture(sourceTexture);
-                // TextureHandle destination = UniversalRenderer.CreateRenderGraphTexture(renderGraph, cameraData.cameraTargetDescriptor, "Destination Texture", false);
-                
-                // This sets the render target of the pass to the active color texture. Change it to your own render target as needed.
-                builder.SetRenderAttachment(resourceData.activeColorTexture, 0);
+                UniversalCameraData cameraData = frameData.Get<UniversalCameraData>();
+                normalsDescriptor.width = cameraData.cameraTargetDescriptor.width;
+                normalsDescriptor.height = cameraData.cameraTargetDescriptor.height;
+                normalsDescriptor.depthBufferBits = 0;
 
-                // Assigns the ExecutePass function to the render pass delegate. This will be called by the render graph when executing the pass.
+                TextureHandle dst = UniversalRenderer.CreateRenderGraphTexture(renderGraph, normalsDescriptor, "_ViewSpaceNormals", false);
+
+                builder.UseTexture(passData.src);
+
+                builder.SetRenderAttachment(dst, 0);
+
+                builder.AllowPassCulling(false);
+
                 builder.SetRenderFunc((PassData data, RasterGraphContext context) => ExecutePass(data, context));
             }
         }
 
-        // NOTE: This method is part of the compatibility rendering path, please use the Render Graph API above instead.
-        // This method is called before executing the render pass.
-        // It can be used to configure render targets and their clear state. Also to create temporary render target textures.
-        // When empty this render pass will render to the active camera render target.
-        // You should never call CommandBuffer.SetRenderTarget. Instead call <c>ConfigureTarget</c> and <c>ConfigureClear</c>.
-        // The render pipeline will ensure target setup and clearing happens in a performant manner.
-        public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData renderingData)
-        {
+        static void ExecutePass(PassData data, RasterGraphContext context) {
+            Blitter.BlitTexture(context.cmd, data.src, new Vector4(1, 1, 0, 0), data.mat, 0);
         }
 
-        // NOTE: This method is part of the compatibility rendering path, please use the Render Graph API above instead.
-        // Here you can implement the rendering logic.
-        // Use <c>ScriptableRenderContext</c> to issue drawing commands or execute command buffers
-        // https://docs.unity3d.com/ScriptReference/Rendering.ScriptableRenderContext.html
-        // You don't have to call ScriptableRenderContext.submit, the render pipeline will call it at specific points in the pipeline.
-        public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
-        {
-        }
-
-        // NOTE: This method is part of the compatibility rendering path, please use the Render Graph API above instead.
-        // Cleanup any allocated resources that were created during the execution of this render pass.
-        public override void OnCameraCleanup(CommandBuffer cmd)
-        {
+        public void Release() {
+            // ...
         }
     }
 
-    SelectiveOutline m_ScriptablePass;
+    [SerializeField] Shader viewSpaceNormalsShader;
+    Material viewSpaceNormalsMaterial;
 
-    /// <inheritdoc/>
-    public override void Create()
-    {
-        m_ScriptablePass = new SelectiveOutline();
+    [SerializeField] Shader outlineShader;
+    Material outlineMaterial;
 
-        // Configures where the render pass should be injected.
-        m_ScriptablePass.renderPassEvent = RenderPassEvent.AfterRenderingOpaques;
+    SelectiveOutlinePass selectiveOutline;
+
+    [SerializeField] LayerMask layerMask;
+    [SerializeField] SelectiveOutlineSettings settings;
+
+    public override void Create() {
+        if (viewSpaceNormalsShader == null || outlineShader == null) {
+            return;
+        }
+        viewSpaceNormalsMaterial = new Material(viewSpaceNormalsShader);
+        outlineMaterial = new Material(outlineShader);
+
+        selectiveOutline = new SelectiveOutlinePass(viewSpaceNormalsMaterial, outlineMaterial, settings, layerMask);
+        selectiveOutline.renderPassEvent = RenderPassEvent.AfterRenderingOpaques;
     }
 
-    // Here you can inject one or multiple render passes in the renderer.
-    // This method is called when setting up the renderer once per-camera.
-    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
-    {
-        renderer.EnqueuePass(m_ScriptablePass);
+    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData) {
+        if (renderingData.cameraData.cameraType == CameraType.Game) {
+            renderer.EnqueuePass(selectiveOutline);
+        }
+    }
+
+    protected override void Dispose(bool disposing) {
+        #if UNITY_EDITOR
+            if (EditorApplication.isPlaying) {
+                Destroy(viewSpaceNormalsMaterial);
+                Destroy(outlineMaterial);
+            } else {
+                DestroyImmediate(viewSpaceNormalsMaterial);
+                DestroyImmediate(outlineMaterial);
+            }
+        #else
+            Destroy(viewSpaceNormalsMaterial);
+            Destroy(outlineMaterial);
+        #endif
+        selectiveOutline?.Release();
     }
 }
