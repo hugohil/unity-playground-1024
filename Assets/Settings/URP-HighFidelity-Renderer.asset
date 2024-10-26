@@ -21,7 +21,12 @@ MonoBehaviour:
     m_Bits: 64
   settings:
     mainColor: {r: 1, g: 1, b: 1, a: 1}
+    scale: 3
+    threshold: 0.198
     thickness: 1
+    perObjectData: 0
+    enableDynamicBatching: 0
+    enableInstancing: 0
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,10 +90,10 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
   - {fileID: 1318638509104245028}
-  - {fileID: 302696881603365982}
   - {fileID: -1878332245247344467}
   - {fileID: -7480934296477688367}
-  m_RendererFeatureMap: 24294fd2bcbe4c125e4c96c635653304adc0de57c6d2eee5d11d699ee4612e98
+  - {fileID: 302696881603365982}
+  m_RendererFeatureMap: 24294fd2bcbe4c12adc0de57c6d2eee5d11d699ee4612e985e4c96c635653304
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -126,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00045f12942b46c698459096c89274e, type: 3}
   m_Name: Compose
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   injectionPoint: 600
   fetchColorBuffer: 1
   requirements: 0

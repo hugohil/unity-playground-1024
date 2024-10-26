@@ -99,13 +99,13 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "5ea69119cea0410e8477cbca126630d4"
+                    "m_Id": "b7b86afb33494f27aa5a596f95fb5c45"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 0
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "982cb8751ecf43809f74ed9a9c02432e"
+                    "m_Id": "5ea69119cea0410e8477cbca126630d4"
                 },
                 "m_SlotId": 0
             }
@@ -119,7 +119,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "5ea69119cea0410e8477cbca126630d4"
+                    "m_Id": "982cb8751ecf43809f74ed9a9c02432e"
                 },
                 "m_SlotId": 0
             }
@@ -201,7 +201,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "03e536ee59cd4ceb9ac008de2efe0780",
     "m_Id": 0,
-    "m_DisplayName": "Contour Render",
+    "m_DisplayName": "_ViewSpaceNormals",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -242,10 +242,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -771.3333740234375,
-            "y": 54.66667175292969,
-            "width": 167.33331298828126,
-            "height": 35.99999237060547
+            "x": -776.0,
+            "y": 15.333343505859375,
+            "width": 180.66668701171876,
+            "height": 36.0
         }
     },
     "m_Slots": [
@@ -278,8 +278,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -570.0,
-            "y": 428.6666259765625,
+            "x": -600.0,
+            "y": 504.0,
             "width": 156.66668701171876,
             "height": 132.0
         }
@@ -560,10 +560,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -279.3334045410156,
-            "y": 217.3333282470703,
+            "x": -346.66668701171877,
+            "y": 276.0,
             "width": 131.3333740234375,
-            "height": 120.00001525878906
+            "height": 120.0
         }
     },
     "m_Slots": [
@@ -620,18 +620,18 @@
     "m_Guid": {
         "m_GuidSerialized": "411b6738-41ae-408f-ac6e-b3557fc9cf12"
     },
-    "m_Name": "Contour Render",
+    "m_Name": "_ViewSpaceNormals",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Contour Render",
-    "m_DefaultReferenceName": "_Contour_Render",
+    "m_RefNameGeneratedByDisplayName": "_ViewSpaceNormals",
+    "m_DefaultReferenceName": "_ViewSpaceNormals",
     "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
+    "m_GeneratePropertyBlock": false,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_DismissedVersion": 0,
     "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
+    "overrideHLSLDeclaration": true,
+    "hlslDeclarationOverride": 1,
     "m_Hidden": false,
     "m_Value": {
         "m_SerializedTexture": "",
