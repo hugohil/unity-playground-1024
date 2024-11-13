@@ -92,7 +92,7 @@ MonoBehaviour:
   - {fileID: 302696881603365982}
   m_RendererFeatureMap: 24294fd2bcbe4c12adc0de57c6d2eee5a1fc01c393b12e6f5e4c96c635653304
   m_UseNativeRenderPass: 1
-  xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
+  xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
@@ -180,8 +180,8 @@ MonoBehaviour:
       m_Bits: 64
     color: {r: 1, g: 1, b: 1, a: 1}
     thickness: 2
-    noiseSpeed: 2.2
-    noiseAmplitude: 1.5
+    noiseSpeed: 0
+    noiseAmplitude: 0
     noiseDensity: 15
     depthMultiplier: 10
     depthThreshold: 0.5
