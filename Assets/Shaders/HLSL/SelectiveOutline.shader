@@ -76,7 +76,8 @@ Shader "Custom/SelectiveOutlineshader"
 
                 float depthEdge = sqrt(pow(depthDiff0, 2) + pow(depthDiff1, 2));
 
-                return 1 - step(depthEdge, _DepthThreshold * depth);
+                float threshold = _DepthThreshold * depth; // scale threshold with original depth
+                return 1 - step(depthEdge, threshold);
             }
 
             float GetNormalEdge (float2 uv, float2 texelSize, float scale) {
@@ -104,10 +105,14 @@ Shader "Custom/SelectiveOutlineshader"
             {
                 float2 uv = input.uv;
 
-                float normalEdge = GetNormalEdge(uv, _NormalsTex_TexelSize, _NormalsSampleScale);
-                float depthEdge = GetDepthEdge(uv, _DepthTex_TexelSize, _DepthSampleScale);
+                float3 normal = SAMPLE_TEXTURE2D(_NormalsTex, sampler_NormalsTex, uv);
+                float mask = step(0.01, dot(normal, normal));
+
+                float normalEdge = GetNormalEdge(uv, _NormalsTex_TexelSize, _NormalsSampleScale * _Thickness);
+                float depthEdge = GetDepthEdge(uv, _DepthTex_TexelSize, _DepthSampleScale * _Thickness) * mask;
 
                 return max(normalEdge, depthEdge) * _Color;
+                // note that alpha is ignored here
 
                 // return SAMPLE_TEXTURE2D(_DepthTex, sampler_DepthTex, uv);
                 // return SAMPLE_TEXTURE2D(_NormalsTex, sampler_NormalsTex, uv);

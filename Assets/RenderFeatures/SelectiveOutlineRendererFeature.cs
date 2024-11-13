@@ -12,17 +12,30 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
 
         public Color color = Color.white;
 
-        [Range(0.0f, 10.0f)]
-        public float thickness = 1.0f;
-
         [Range(0, 10)]
-        public int depthSampleScale = 1;
-        [Range(0.0f, 2.0f)]
+        public int thickness = 1;
+
+        // [Range(0, 10)]
+        // public int depthSampleScale = 1;
+        // [Range(0, 10)]
+        // public int normalsSampleScale = 1;
+
+        [Range(0f, 10.0f)]
+        public float noiseSpeed = 3.0f;
+        [Range(0f, 20.0f)]
+        public float noiseAmplitude = 2.0f;
+        [Range(0f, 100.0f)]
+        public float noiseDensity = 50.0f;
+
+        [Range(1.0f, 20.0f)]
+        public float depthMultiplier = 5.0f;
+        [Range(0.0f, 1.0f)]
         public float depthThreshold = 0.5f;
 
-
-        [Range(0, 10)]
-        public int normalsSampleScale = 1;
+        [Range(0.0f, 2.0f)]
+        public float normalsMultiplier = 0.8f;
+        [Range(0.0f, 10.0f)]
+        public float normalsContrast = 1.5f;
         [Range(0.0f, 1.0f)]
         public float normalsThreshold = 0.5f;
     }
@@ -100,10 +113,16 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
                 // you can set properties here, except for textures coming from this render graph
                 outlineMaterial.SetColor("_Color", m_settings.color);
                 outlineMaterial.SetFloat("_Thickness", m_settings.thickness);
-                outlineMaterial.SetFloat("_DepthSampleScale", m_settings.depthSampleScale);
+                outlineMaterial.SetFloat("_NoiseSpeed", m_settings.noiseSpeed);
+                outlineMaterial.SetFloat("_NoiseAmplitude", m_settings.noiseAmplitude);
+                outlineMaterial.SetFloat("_NoiseDensity", m_settings.noiseDensity);
+                outlineMaterial.SetFloat("_DepthMultiplier", m_settings.depthMultiplier);
+                outlineMaterial.SetFloat("_NormalsMultiplier", m_settings.normalsMultiplier);
+                outlineMaterial.SetFloat("_NormalsContrast", m_settings.normalsContrast);
                 outlineMaterial.SetFloat("_DepthThreshold", m_settings.depthThreshold);
-                outlineMaterial.SetFloat("_NormalsSampleScale", m_settings.normalsSampleScale);
                 outlineMaterial.SetFloat("_NormalsThreshold", m_settings.normalsThreshold);
+                // outlineMaterial.SetFloat("_NormalsSampleScale", m_settings.normalsSampleScale);
+                // outlineMaterial.SetFloat("_DepthSampleScale", m_settings.depthSampleScale);
 
                 passData.outlineMaterial = outlineMaterial;
 
@@ -117,7 +136,6 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
 
         static void ExecuteNormalsPass(NormalsPassData data, RasterGraphContext context) {
             context.cmd.DrawRendererList(data.normalsRendererList);
-            // todo: get depth from this render list as wel
         }
 
         static void ExecuteOutlinePass(OutlinePassData data, RasterGraphContext context) {

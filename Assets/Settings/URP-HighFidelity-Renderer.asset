@@ -171,14 +171,20 @@ MonoBehaviour:
   m_Active: 1
   viewSpaceNormalsShader: {fileID: -6465566751694194690, guid: cd81f5eae26d044fb84659e817111613,
     type: 3}
-  outlineShader: {fileID: 4800000, guid: 511b806f047b42745b3cd84476688908, type: 3}
+  outlineShader: {fileID: -6465566751694194690, guid: d5575a061710c488e9fee4a7739b948f,
+    type: 3}
   injectionPoint: 550
   settings:
-    mainColor: {r: 1, g: 1, b: 1, a: 1}
-    scale: 2
-    threshold: 0.1
-    normalsThreshold: 0.669
-    thickness: 0.48
     layerMask:
       serializedVersion: 2
       m_Bits: 64
+    color: {r: 1, g: 1, b: 1, a: 1}
+    thickness: 2
+    noiseSpeed: 2.2
+    noiseAmplitude: 1.5
+    noiseDensity: 15
+    depthMultiplier: 10
+    depthThreshold: 0.5
+    normalsMultiplier: 0.3
+    normalsContrast: 3
+    normalsThreshold: 0.4
