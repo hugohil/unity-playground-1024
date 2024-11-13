@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeae38d4919fbd149afd83d885e2cc6f, type: 3}
   m_Name: SelectiveOutline
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   viewSpaceNormalsShader: {fileID: 4800000, guid: 91b4a7db8dc25e64b9818f789760b46a,
     type: 3}
   outlineShader: {fileID: 4800000, guid: 511b806f047b42745b3cd84476688908, type: 3}
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62c9c65cf3354c93be831c8bc075510, type: 3}
   m_Name: SSAO
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_Settings:
     AOMethod: 1
     Downsample: 0
@@ -88,9 +88,9 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 1318638509104245028}
   - {fileID: -1878332245247344467}
-  - {fileID: -7480934296477688367}
+  - {fileID: 8011536035328687265}
   - {fileID: 302696881603365982}
-  m_RendererFeatureMap: 24294fd2bcbe4c12adc0de57c6d2eee5d11d699ee4612e985e4c96c635653304
+  m_RendererFeatureMap: 24294fd2bcbe4c12adc0de57c6d2eee5a1fc01c393b12e6f5e4c96c635653304
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00045f12942b46c698459096c89274e, type: 3}
   m_Name: Compose
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   injectionPoint: 600
   fetchColorBuffer: 1
   requirements: 0
@@ -156,3 +156,29 @@ MonoBehaviour:
   passIndex: 0
   bindDepthStencilAttachment: 0
   m_Version: 1
+--- !u!114 &8011536035328687265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a72f2ad15b945e68da7377843843da, type: 3}
+  m_Name: SelectiveOutlineRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  viewSpaceNormalsShader: {fileID: -6465566751694194690, guid: cd81f5eae26d044fb84659e817111613,
+    type: 3}
+  outlineShader: {fileID: 4800000, guid: 511b806f047b42745b3cd84476688908, type: 3}
+  injectionPoint: 550
+  settings:
+    mainColor: {r: 1, g: 1, b: 1, a: 1}
+    scale: 2
+    threshold: 0.1
+    normalsThreshold: 0.669
+    thickness: 0.48
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 64

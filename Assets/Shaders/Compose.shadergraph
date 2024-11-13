@@ -127,15 +127,15 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 0.0,
-            "y": 0.0
+            "x": 119.50003051757813,
+            "y": -76.50001525878906
         },
         "m_Blocks": []
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 0.0,
-            "y": 200.0
+            "x": -24.99995231628418,
+            "y": 106.50001525878906
         },
         "m_Blocks": [
             {
@@ -201,7 +201,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "03e536ee59cd4ceb9ac008de2efe0780",
     "m_Id": 0,
-    "m_DisplayName": "_ViewSpaceNormals",
+    "m_DisplayName": "_SelectiveOutlineTexture",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -242,10 +242,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -776.0,
-            "y": 15.333343505859375,
-            "width": 180.66668701171876,
-            "height": 36.0
+            "x": -928.0001220703125,
+            "y": 15.999972343444825,
+            "width": 202.0,
+            "height": 33.99999237060547
         }
     },
     "m_Slots": [
@@ -255,7 +255,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -278,10 +278,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -600.0,
-            "y": 504.0,
-            "width": 156.66668701171876,
-            "height": 132.0
+            "x": -572.0000610351563,
+            "y": 345.50006103515627,
+            "width": 154.99996948242188,
+            "height": 128.50003051757813
         }
     },
     "m_Slots": [
@@ -289,7 +289,7 @@
             "m_Id": "c2e442e24c6b4059be79bb83a8a80130"
         },
         {
-            "m_Id": "74284b34e31a4174a4a718d65a9ac0e4"
+            "m_Id": "c5744a9b8c1a425e90a15413ac744e23"
         }
     ],
     "synonyms": [
@@ -437,7 +437,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -522,10 +522,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -839.3333129882813,
-            "y": 422.6666259765625,
-            "width": 147.33331298828126,
-            "height": 132.0
+            "x": -900.0001220703125,
+            "y": 140.0000762939453,
+            "width": 145.00006103515626,
+            "height": 128.4999542236328
         }
     },
     "m_Slots": [
@@ -560,10 +560,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -346.66668701171877,
-            "y": 276.0,
-            "width": 131.3333740234375,
-            "height": 120.0
+            "x": -317.5000305175781,
+            "y": 274.5,
+            "width": 129.50001525878907,
+            "height": 117.99996948242188
         }
     },
     "m_Slots": [
@@ -620,11 +620,11 @@
     "m_Guid": {
         "m_GuidSerialized": "411b6738-41ae-408f-ac6e-b3557fc9cf12"
     },
-    "m_Name": "_ViewSpaceNormals",
+    "m_Name": "_SelectiveOutlineTexture",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "_ViewSpaceNormals",
-    "m_DefaultReferenceName": "_ViewSpaceNormals",
-    "m_OverrideReferenceName": "",
+    "m_RefNameGeneratedByDisplayName": "_SelectiveOutlineTexture",
+    "m_DefaultReferenceName": "_SelectiveOutlineTexture",
+    "m_OverrideReferenceName": "_SelectiveOutlineTexture",
     "m_GeneratePropertyBlock": false,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
@@ -641,31 +641,6 @@
     "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ColorRGBAMaterialSlot",
-    "m_ObjectId": "74284b34e31a4174a4a718d65a9ac0e4",
-    "m_Id": 2,
-    "m_DisplayName": "Output",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Output",
-    "m_StageCapability": 2,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 1.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 1.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -748,7 +723,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -787,10 +762,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -588.0000610351563,
-            "y": 116.66663360595703,
-            "width": 184.666748046875,
-            "height": 254.66668701171876
+            "x": -600.0000610351563,
+            "y": 16.000051498413087,
+            "width": 183.0,
+            "height": 249.99998474121095
         }
     },
     "m_Slots": [
@@ -859,6 +834,31 @@
     },
     "m_Labels": [],
     "m_ScreenSpaceType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.ColorRGBAMaterialSlot",
+    "m_ObjectId": "c5744a9b8c1a425e90a15413ac744e23",
+    "m_Id": 2,
+    "m_DisplayName": "Output",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Output",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+    },
+    "m_Labels": []
 }
 
 {
