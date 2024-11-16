@@ -111,7 +111,7 @@ Material:
     - _Mode: 0
     - _NormalIntensity: -1
     - _NormalValue: 0.01
-    - _OcclusionIntensity: 0.666
+    - _OcclusionIntensity: 0.679
     - _OcclusionStrength: 0.75
     - _OutlineWidth: 0.015
     - _Parallax: 0.02
@@ -142,3 +142,4 @@ Material:
     - _RimTint: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
