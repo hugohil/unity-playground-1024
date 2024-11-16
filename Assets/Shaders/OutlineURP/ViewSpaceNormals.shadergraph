@@ -181,10 +181,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -770.0001220703125,
-            "y": 147.0,
+            "x": -771.0,
+            "y": 200.0,
             "width": 208.0,
-            "height": 314.5000915527344
+            "height": 314.5
         }
     },
     "m_Slots": [
@@ -440,7 +440,7 @@
     "m_AlphaMode": 0,
     "m_RenderFace": 2,
     "m_AlphaClip": false,
-    "m_CastShadows": true,
+    "m_CastShadows": false,
     "m_ReceiveShadows": true,
     "m_DisableTint": false,
     "m_AdditionalMotionVectorMode": 0,
@@ -462,10 +462,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -459.0,
-            "y": 260.0,
-            "width": 207.99998474121095,
-            "height": 326.00006103515627
+            "x": -387.0,
+            "y": 200.0,
+            "width": 208.0,
+            "height": 326.0
         }
     },
     "m_Slots": [

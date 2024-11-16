@@ -179,12 +179,11 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 64
     color: {r: 1, g: 1, b: 1, a: 1}
-    thickness: 2
-    noiseSpeed: 0
+    thickness: 1
+    noiseSpeed: 3
     noiseAmplitude: 0
-    noiseDensity: 15
-    depthMultiplier: 10
-    depthThreshold: 0.5
-    normalsMultiplier: 0.3
-    normalsContrast: 3
-    normalsThreshold: 0.4
+    noiseDensity: 25
+    depthMultiplier: 1
+    depthThreshold: 0.59
+    normalsDepthMultiplier: 0.294
+    normalsThreshold: 0.614

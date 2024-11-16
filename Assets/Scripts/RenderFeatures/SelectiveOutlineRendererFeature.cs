@@ -27,15 +27,14 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
         [Range(0f, 100.0f)]
         public float noiseDensity = 50.0f;
 
-        [Range(1.0f, 20.0f)]
-        public float depthMultiplier = 5.0f;
+        [Range(0.0f, 1.0f)]
+        public float depthMultiplier = 0.5f;
         [Range(0.0f, 1.0f)]
         public float depthThreshold = 0.5f;
 
-        [Range(0.0f, 2.0f)]
-        public float normalsMultiplier = 0.8f;
-        [Range(0.0f, 10.0f)]
-        public float normalsContrast = 1.5f;
+        [Range(0.0f, 1.0f)]
+        public float normalsDepthMultiplier = 0.4f;
+
         [Range(0.0f, 1.0f)]
         public float normalsThreshold = 0.5f;
     }
@@ -45,15 +44,16 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
         Material normalsMaterial;
         Material outlineMaterial;
 
-        private static readonly int globalTextureID = Shader.PropertyToID("_SelectiveOutlineTexture");
+        private static readonly int GlobalTextureID = Shader.PropertyToID("_SelectiveOutlineTexture");
+        private static readonly int NormalsTexID = Shader.PropertyToID("_NormalsTex");
+        private static readonly int DepthTexID = Shader.PropertyToID("_DepthTex");
         private static readonly int ColorID = Shader.PropertyToID("_Color");
         private static readonly int ThicknessID = Shader.PropertyToID("_Thickness");
         private static readonly int NoiseSpeedID = Shader.PropertyToID("_NoiseSpeed");
         private static readonly int NoiseAmplitudeID = Shader.PropertyToID("_NoiseAmplitude");
         private static readonly int NoiseDensityID = Shader.PropertyToID("_NoiseDensity");
         private static readonly int DepthMultiplierID = Shader.PropertyToID("_DepthMultiplier");
-        private static readonly int NormalsMultiplierID = Shader.PropertyToID("_NormalsMultiplier");
-        private static readonly int NormalsContrastID = Shader.PropertyToID("_NormalsContrast");
+        private static readonly int NormalsDepthMultiplierID = Shader.PropertyToID("_NormalsDepthMultiplier");
         private static readonly int DepthThresholdID = Shader.PropertyToID("_DepthThreshold");
         private static readonly int NormalsThresholdID = Shader.PropertyToID("_NormalsThreshold");
 
@@ -134,8 +134,7 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
                 outlineMaterial.SetFloat(NoiseAmplitudeID, m_settings.noiseAmplitude);
                 outlineMaterial.SetFloat(NoiseDensityID, m_settings.noiseDensity);
                 outlineMaterial.SetFloat(DepthMultiplierID, m_settings.depthMultiplier);
-                outlineMaterial.SetFloat(NormalsMultiplierID, m_settings.normalsMultiplier);
-                outlineMaterial.SetFloat(NormalsContrastID, m_settings.normalsContrast);
+                outlineMaterial.SetFloat(NormalsDepthMultiplierID, m_settings.normalsDepthMultiplier);
                 outlineMaterial.SetFloat(DepthThresholdID, m_settings.depthThreshold);
                 outlineMaterial.SetFloat(NormalsThresholdID, m_settings.normalsThreshold);
                 // outlineMaterial.SetFloat("_NormalsSampleScale", m_settings.normalsSampleScale);
@@ -144,7 +143,7 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
                 passData.outlineMaterial = outlineMaterial;
 
                 builder.SetRenderAttachment(destination, 0);
-                builder.SetGlobalTextureAfterPass(destination, globalTextureID);
+                builder.SetGlobalTextureAfterPass(destination, GlobalTextureID);
 
                 builder.SetRenderFunc((OutlinePassData data, RasterGraphContext context) => ExecuteOutlinePass(data, context));
                 builder.AllowPassCulling(false);
@@ -156,9 +155,9 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
         }
 
         static void ExecuteOutlinePass(OutlinePassData data, RasterGraphContext context) {
-            // setting textures from render graph outside the pass execution scope will break the render graph (you're trying to access a texture that is not yet created blabla)
-            data.outlineMaterial.SetTexture("_NormalsTex", data.normals);
-            data.outlineMaterial.SetTexture("_DepthTex", data.depth);
+            // setting anything (texture, frameData, ...) from render graph outside the pass execution scope will break the render graph (you're trying to access a resource that is not yet created blabla)
+            data.outlineMaterial.SetTexture(NormalsTexID, data.normals);
+            data.outlineMaterial.SetTexture(DepthTexID, data.depth);
 
             context.cmd.DrawProcedural(Matrix4x4.identity, data.outlineMaterial, 0, MeshTopology.Triangles, 3);
         }
