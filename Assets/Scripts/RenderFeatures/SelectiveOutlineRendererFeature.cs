@@ -45,15 +45,32 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
         Material normalsMaterial;
         Material outlineMaterial;
 
-        private int globalTextureID = Shader.PropertyToID("_SelectiveOutlineTexture");
+        private static readonly int globalTextureID = Shader.PropertyToID("_SelectiveOutlineTexture");
+        private static readonly int ColorID = Shader.PropertyToID("_Color");
+        private static readonly int ThicknessID = Shader.PropertyToID("_Thickness");
+        private static readonly int NoiseSpeedID = Shader.PropertyToID("_NoiseSpeed");
+        private static readonly int NoiseAmplitudeID = Shader.PropertyToID("_NoiseAmplitude");
+        private static readonly int NoiseDensityID = Shader.PropertyToID("_NoiseDensity");
+        private static readonly int DepthMultiplierID = Shader.PropertyToID("_DepthMultiplier");
+        private static readonly int NormalsMultiplierID = Shader.PropertyToID("_NormalsMultiplier");
+        private static readonly int NormalsContrastID = Shader.PropertyToID("_NormalsContrast");
+        private static readonly int DepthThresholdID = Shader.PropertyToID("_DepthThreshold");
+        private static readonly int NormalsThresholdID = Shader.PropertyToID("_NormalsThreshold");
 
-        private List<ShaderTagId> m_shaderTagIds = new List<ShaderTagId> { new ShaderTagId("UniversalForward"), new ShaderTagId("UniversalForwardOnly"), new ShaderTagId("SRPDefaultUnlit") };
+        private static readonly List<ShaderTagId> m_shaderTagIds = new List<ShaderTagId> {
+            new ShaderTagId("UniversalForward"),
+            new ShaderTagId("UniversalForwardOnly"),
+            new ShaderTagId("SRPDefaultUnlit")
+        };
 
         SelectiveOutlineSettings m_settings;
 
         public void Setup(Shader viewSpaceNormalsShader, Shader outlineShader, SelectiveOutlineSettings settings) {
-            normalsMaterial = new Material(viewSpaceNormalsShader);
-            outlineMaterial = new Material(outlineShader);
+            normalsMaterial = CoreUtils.CreateEngineMaterial(viewSpaceNormalsShader);
+            if (normalsMaterial == null) Debug.LogError($"Failed to create material from {viewSpaceNormalsShader.name}.");
+
+            outlineMaterial = CoreUtils.CreateEngineMaterial(outlineShader);
+            if (outlineMaterial == null) Debug.LogError($"Failed to create material from {outlineShader.name}."); 
 
             m_settings = settings;
         }
@@ -111,16 +128,16 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
                 passData.depth = resourceData.cameraDepthTexture;
 
                 // you can set properties here, except for textures coming from this render graph
-                outlineMaterial.SetColor("_Color", m_settings.color);
-                outlineMaterial.SetFloat("_Thickness", m_settings.thickness);
-                outlineMaterial.SetFloat("_NoiseSpeed", m_settings.noiseSpeed);
-                outlineMaterial.SetFloat("_NoiseAmplitude", m_settings.noiseAmplitude);
-                outlineMaterial.SetFloat("_NoiseDensity", m_settings.noiseDensity);
-                outlineMaterial.SetFloat("_DepthMultiplier", m_settings.depthMultiplier);
-                outlineMaterial.SetFloat("_NormalsMultiplier", m_settings.normalsMultiplier);
-                outlineMaterial.SetFloat("_NormalsContrast", m_settings.normalsContrast);
-                outlineMaterial.SetFloat("_DepthThreshold", m_settings.depthThreshold);
-                outlineMaterial.SetFloat("_NormalsThreshold", m_settings.normalsThreshold);
+                outlineMaterial.SetColor(ColorID, m_settings.color);
+                outlineMaterial.SetFloat(ThicknessID, m_settings.thickness);
+                outlineMaterial.SetFloat(NoiseSpeedID, m_settings.noiseSpeed);
+                outlineMaterial.SetFloat(NoiseAmplitudeID, m_settings.noiseAmplitude);
+                outlineMaterial.SetFloat(NoiseDensityID, m_settings.noiseDensity);
+                outlineMaterial.SetFloat(DepthMultiplierID, m_settings.depthMultiplier);
+                outlineMaterial.SetFloat(NormalsMultiplierID, m_settings.normalsMultiplier);
+                outlineMaterial.SetFloat(NormalsContrastID, m_settings.normalsContrast);
+                outlineMaterial.SetFloat(DepthThresholdID, m_settings.depthThreshold);
+                outlineMaterial.SetFloat(NormalsThresholdID, m_settings.normalsThreshold);
                 // outlineMaterial.SetFloat("_NormalsSampleScale", m_settings.normalsSampleScale);
                 // outlineMaterial.SetFloat("_DepthSampleScale", m_settings.depthSampleScale);
 
@@ -147,8 +164,14 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
         }
 
         public void Dispose() {
-            CoreUtils.Destroy(normalsMaterial);
-            CoreUtils.Destroy(outlineMaterial);
+            if (normalsMaterial != null) {
+                CoreUtils.Destroy(normalsMaterial);
+                normalsMaterial = null;
+            }
+            if (outlineMaterial != null) {
+                CoreUtils.Destroy(outlineMaterial);
+                outlineMaterial = null;
+            }
         }
     }
 
@@ -168,17 +191,13 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
     /// <inheritdoc/>
     public override void Create()
     {
-        m_ScriptablePass = new SelectiveOutlinePass();
+        if (m_ScriptablePass == null) m_ScriptablePass = new SelectiveOutlinePass();
+        m_ScriptablePass.Setup(viewSpaceNormalsShader, outlineShader, settings);
 
         m_ScriptablePass.ConfigureInput(ScriptableRenderPassInput.Depth);
+        //m_ScriptablePass.ConfigureInput(ScriptableRenderPassInput.Normal | ScriptableRenderPassInput.Depth);
 
         m_ScriptablePass.renderPassEvent = injectionPoint;
-    }
-
-    public void Dispose() {
-        if (m_ScriptablePass != null) {
-            m_ScriptablePass.Dispose();
-        }
     }
 
     // Here you can inject one or multiple render passes in the renderer.
@@ -190,7 +209,14 @@ public class SelectiveOutlineRendererFeature : ScriptableRendererFeature {
             Debug.LogError("SelectiveOutlinePass is not properly initialized.");
             return;
         }
-        m_ScriptablePass.Setup(viewSpaceNormalsShader, outlineShader, settings);
         renderer.EnqueuePass(m_ScriptablePass);
+    }
+    protected override void Dispose(bool disposing) {
+        if (disposing) {
+            if (m_ScriptablePass != null) {
+                m_ScriptablePass.Dispose();
+                m_ScriptablePass = null;
+            }
+        }
     }
 }
